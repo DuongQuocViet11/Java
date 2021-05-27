@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.fptaptech.com"
+           xmlns="http://www.fptaptech.com"
+           elementFormDefault="qualified">
+    <xs:element name="FName" type="xs:string"/>
+    <xs:element name="LName" type="xs:string"/>
+
+    <xs:element name="Name">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="FName"/>
+                <xs:element ref="LName"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Age">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="15"/>
+                <xs:maxInclusive value="120"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="Student">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name"/>
+                <xs:element ref="Age"/>
+            </xs:sequence>
+            <xs:attribute name="Sex" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="FPTAPTECH">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Student" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

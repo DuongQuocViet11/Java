@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<EventManager xmlns="http://www.creativemanagement.com"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.creativemanagement.com EventManagement_schema.xsd">
+    <Event orderid="A556">
+        <Customer>TideWaterHouseCoopers</Customer>
+        <Venue>Hilton Bermingham Metropole</Venue>
+        <Date>2007-04-24</Date>
+        <NoOfGuests>500</NoOfGuests>
+        <ContactNumber>3453667</ContactNumber>
+        <Address>32 High Street, North Midlands</Address>
+    </Event>
+    <Service category="AnnualConference">
+        <TechDelivery>Multimedia Arrangement</TechDelivery>
+        <Entertainment>Media Personality</Entertainment>
+        <VenueBooking>Through TravelDesignated Service</VenueBooking>
+        <Themeing>Emulate Movie Themed Dinner</Themeing>
+    </Service>
+</EventManager>
